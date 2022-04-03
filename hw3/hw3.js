@@ -1,7 +1,6 @@
 'use strict'
 
 let count=216;
-
 let ost = count %100;
 if (ost===1) {
     console.log(count, 'товар');
