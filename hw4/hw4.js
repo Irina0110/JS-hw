@@ -12,21 +12,19 @@ for (let elem of arr){
 console.log(pArr);
 
 //Задача 2
-
-let count = new Array(7);
-for (let i=0; i<count.length; i++){
-    count[i]=Math.floor((Math.random() * (295 + 1)+5))
-}
-console.log(count);
 let min=300, i_min;
 let max=5, i_max;
+let count = new Array(7);
+for (let i=0; i<count.length; i++){
+    count[i]=Math.floor((Math.random() * (295 + 1)+5));
+}
+console.log(count);
+
 for (let i=0; i<count.length; i++){
     if (count[i]<min){
         min=count[i];
         i_min=i;
     }
-}
-for (let i=0; i<count.length; i++){
     if (count[i]>max){
         max=count[i];
         i_max=i;
@@ -45,7 +43,7 @@ while (true) {
     if (str === '0') {
         break;
     }
-    while (!strArr.includes(str)) {
+    if (!strArr.includes(str)) {
         strArr.push(str);
     }
 }
