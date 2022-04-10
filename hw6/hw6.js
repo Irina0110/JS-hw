@@ -60,3 +60,8 @@ let checkTemp = function (element, index, array) {
 }
 if (temperatures.some(checkTemp)) console.log("температура поднималась выше 500");
 else console.log("температура не поднималась выше 500");
+
+
+
+if (temperatures.some(elem=> elem.some(temp => temp > 500))) console.log("температура поднималась выше 500");
+else console.log("температура не поднималась выше 500");
