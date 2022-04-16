@@ -67,5 +67,6 @@ let books = [
 books.sort((prev, next) => {
     if (prev.title < next.title) return -1;
     if (prev.title > next.title) return 1;
+    return  0;
 } )
 console.log(books);
