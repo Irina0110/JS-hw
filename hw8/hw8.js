@@ -74,3 +74,31 @@ function generateTable (arr){
 }
 generateTable(articles);
 generateTable(goods);
+
+let prises = {
+    headphones: "Наушники",
+    book: "Книга",
+    postcard: "Открытка"
+};
+
+function generateField (n){
+    let tableR = document.createElement("table");
+    tableR.classList.add("field");
+    if (n < 3) return;
+    for (let i = 0; i < n; i++){
+        let row = tableR.insertRow();
+        for (let j = 0; j < n; j++){
+            row.insertCell();
+        }
+    }
+    document.body.append(tableR);
+    let cells = document.querySelectorAll(".field td");
+    for (let i = 0; i < 3; i++){
+        let ind = Math.floor(Math.random() * cells.length);
+        console.log(ind);
+        cells[ind].innerText = Object.values(prises)[i];
+    }
+
+}
+
+generateField(4);
