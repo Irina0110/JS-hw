@@ -1,0 +1,21 @@
+tbody tr:nth-child(odd){
+    background-color: lavender;
+}
+tbody tr:first-child{
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: darkgray;
+
+}
+td{
+    padding: 15px;
+    border: black solid;
+}
+table{
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
