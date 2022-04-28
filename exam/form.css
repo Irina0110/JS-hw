@@ -1,0 +1,78 @@
+@font-face {
+    font-family: SansSerif;
+}
+form{
+    max-width: 70% ;
+    margin: 0 auto;
+}
+input{
+    box-sizing: border-box;
+    height: 30px;
+}
+input, textarea{
+    margin-left: auto;
+    width: 100%;
+}
+label{
+    display: flex;
+    font-size: 18px;
+}
+#descriptionZad{
+    height: 100px;
+}
+#submitTask,
+#buttonAddUser{
+    font-size: 18px;
+    font-family: "Times New Roman";
+}
+#buttonAddUser,
+.inputMember{
+    width: 250px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+.error{
+    color: red;
+    margin-right: auto;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.block{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 30px;
+}
+.blockDescription{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 40px;
+}
+
+#submitTask {
+    margin-top: 50px;
+    height: 35px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-right: auto;
+}
+.inputMember{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.member{
+    width: 220px;
+    height: 30px;
+    grid-column: 1/2;
+}
+.clean{
+    width: 30px;
+    height: 30px;
+    grid-column: 2/3;
+    text-align: center;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+

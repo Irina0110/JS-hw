@@ -1,0 +1,51 @@
+@font-face {
+    font-family: SansSerif;
+}
+section{
+    max-width: 1000px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+h1,
+h3,
+.data{
+    font-weight: bold;
+    font-family: "Times New Roman";
+}
+.check{
+    background-color: blueviolet !important;
+}
+.tasks div{
+    width: 100%;
+    padding: 10px;
+}
+.tasks div:nth-child(odd){
+    background-color: darkgrey;
+}
+.tasks div:nth-child(even){
+    background-color: bisque;
+}
+p,
+span{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.empty{
+    height: 30px;
+    text-align: center;
+}
+.buttonDelete{
+    background-color: inherit !important;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+#buttonDelete{
+    height: 35px;
+    grid-column: 2/3;
+}
